@@ -1,0 +1,45 @@
+---
+/**
+ * Home / holding page.
+ * Reproduces the current "CROP — coming soon" page, but every value
+ * (colour, font, size, spacing) now comes from tokens.css instead of
+ * being hard-coded. Change the brand once, in tokens, and this updates.
+ */
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="CROP — Coming Soon" description="CROP — coming soon.">
+  <main class="holding">
+    <h1 class="wordmark">CROP</h1>
+    <p class="tagline">Coming Soon</p>
+  </main>
+</Base>
+
+<style>
+  .holding {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5vw;
+    overflow: hidden;
+  }
+
+  .wordmark {
+    font-weight: 900;
+    font-size: var(--text-hero);
+    letter-spacing: var(--tracking-tight);
+    user-select: none;
+  }
+
+  .tagline {
+    margin-top: var(--space-4);
+    font-size: var(--text-small);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-muted);
+    padding-left: var(--tracking-wide); /* optical centring for the tracking */
+  }
+</style>
