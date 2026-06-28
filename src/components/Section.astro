@@ -1,0 +1,31 @@
+---
+/**
+ * Section — a reusable content block for future pages.
+ * Centres its content to a readable max-width and applies the
+ * spacing scale from tokens.css. As real pages get built, this is
+ * the kind of component Dave's design system maps onto.
+ */
+interface Props {
+  align?: 'left' | 'center';
+}
+const { align = 'center' } = Astro.props;
+---
+
+<section class={`section section--${align}`}>
+  <div class="section__inner">
+    <slot />
+  </div>
+</section>
+
+<style>
+  .section {
+    padding: var(--space-5) var(--space-4);
+  }
+  .section__inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+  .section--center .section__inner {
+    text-align: center;
+  }
+</style>

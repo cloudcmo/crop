@@ -1,0 +1,48 @@
+/* ============================================================
+   CROP — DESIGN TOKENS
+   ------------------------------------------------------------
+   These are PLACEHOLDER values, holding the look of the current
+   holding page. They are the ONLY place brand decisions live.
+
+   When Dave delivers his Figma design system, his real values
+   (colours, fonts, type scale, spacing) get dropped in here and
+   the entire site re-themes — no other file needs to change.
+
+   Each variable below maps 1:1 to a Figma Variable / Style, so
+   Dave's system and this file stay in lockstep.
+   ============================================================ */
+
+:root {
+  /* ---- Colour -------------------------------------------- */
+  --color-bg:     #0f0f0f;  /* page background      (placeholder) */
+  --color-fg:     #ffffff;  /* primary text         (placeholder) */
+  --color-muted:  #8a8a8a;  /* secondary text       (placeholder) */
+  --color-brand:  #1db954;  /* CROP brand accent    (placeholder) */
+
+  /* ---- Typography: families ------------------------------ */
+  --font-heading: 'Oswald', system-ui, sans-serif;          /* placeholder */
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif; /* placeholder */
+
+  /* ---- Typography: scale --------------------------------- */
+  --text-hero:  clamp(5rem, 28vw, 24rem);    /* the giant CROP wordmark */
+  --text-lg:    clamp(2rem, 6vw, 4rem);
+  --text-base:  1rem;
+  --text-small: clamp(0.8rem, 2.2vw, 1.25rem);
+
+  --leading-tight: 0.9;
+  --leading-body:  1.6;
+  --tracking-wide: 0.45em;
+  --tracking-tight: -0.04em;
+
+  /* ---- Spacing scale ------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 2rem;
+  --space-5: 4rem;
+  --space-6: 8rem;
+
+  /* ---- Layout -------------------------------------------- */
+  --content-max: 1100px;
+  --radius: 8px;
+}
