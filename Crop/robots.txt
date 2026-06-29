@@ -1,0 +1,4 @@
+# Staging: keep this draft out of search engines.
+# Remove or relax this file when the site goes to production.
+User-agent: *
+Disallow: /
