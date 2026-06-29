@@ -14,10 +14,13 @@
 
 :root {
   /* ---- Colour -------------------------------------------- */
-  --color-bg:     #0f0f0f;  /* page background      (placeholder) */
-  --color-fg:     #ffffff;  /* primary text         (placeholder) */
-  --color-muted:  #8a8a8a;  /* secondary text       (placeholder) */
-  --color-brand:  #1db954;  /* CROP brand accent    (placeholder) */
+  --color-bg:       #0f0f0f;  /* page background      (placeholder) */
+  --color-surface:  #1a1a1a;  /* raised panels/cards  (placeholder) */
+  --color-fg:       #ffffff;  /* primary text         (placeholder) */
+  --color-muted:    #8a8a8a;  /* secondary text       (placeholder) */
+  --color-line:     #2a2a2a;  /* hairlines/borders    (placeholder) */
+  --color-brand:    #1db954;  /* CROP brand accent    (placeholder) */
+  --color-on-brand: #0a0a0a;  /* text on the accent   (placeholder) */
 
   /* ---- Typography: families ------------------------------ */
   --font-heading: 'Oswald', system-ui, sans-serif;          /* placeholder */
@@ -26,6 +29,8 @@
   /* ---- Typography: scale --------------------------------- */
   --text-hero:  clamp(5rem, 28vw, 24rem);    /* the giant CROP wordmark */
   --text-lg:    clamp(2rem, 6vw, 4rem);
+  --text-title: clamp(1.75rem, 4vw, 2.75rem); /* section headings */
+  --text-lead:  clamp(1.125rem, 2.2vw, 1.35rem); /* section intros */
   --text-base:  1rem;
   --text-small: clamp(0.8rem, 2.2vw, 1.25rem);
 
