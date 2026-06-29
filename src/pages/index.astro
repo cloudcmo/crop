@@ -82,7 +82,7 @@ const email = 'hello@wearecrop.co.uk';
     <section class="hero">
       <div class="inner">
         <p class="eyebrow">Brand strategy and identity</p>
-        <h1 class="hero__title">Brands, brought into focus.</h1>
+        <h1 class="hero__title">Find the brand. Lose the rest.</h1>
         <p class="hero__sub">Two senior partners. Decades of brands behind us. Sharp strategy and design, modern tools, and none of the agency faff.</p>
         <div class="cta-row">
           <a class="btn btn--primary" href="#contact">Start a conversation</a>
@@ -108,15 +108,18 @@ const email = 'hello@wearecrop.co.uk';
           <article class="duo__item">
             <p class="duo__no">01</p>
             <h2 class="duo__title">Brand strategy</h2>
-            <p class="muted">We find the one true thing your brand is about, and turn it into a story everyone can build on.</p>
+            <p class="muted">We find the one true thing you are about, and make it the idea everything else hangs on.</p>
           </article>
           <article class="duo__item">
             <p class="duo__no">02</p>
             <h2 class="duo__title">Brand identity</h2>
-            <p class="muted">We give that idea a face. A visual world and a voice that make it unmistakable, everywhere.</p>
+            <p class="muted">We give that idea a face. A look and a voice no one can mistake for anyone else.</p>
           </article>
         </div>
-        <p class="aside">When a brief needs more, we bring in an excellent, hand-picked network and run it for you.</p>
+        <div class="extend">
+          <h3 class="extend__title">A small studio with a big black book.</h3>
+          <p class="muted">No studio rent, no London overheads, no juniors on your budget. You pay for the work, not the fluff. When a brief needs more, photography, film, web, PR, we build the right team around it from a hand-picked network we trust, and run it for you.</p>
+        </div>
       </div>
     </section>
 
@@ -143,8 +146,8 @@ const email = 'hello@wearecrop.co.uk';
     <section id="studio" class="block">
       <div class="inner">
         <p class="eyebrow">The studio</p>
-        <h2 class="title">No juniors. No faff. You work with us.</h2>
-        <p class="lead">Two senior people who have spent careers doing this, on the tools from first call to final delivery.</p>
+        <h2 class="title">You hire us. You get us.</h2>
+        <p class="lead">Two senior people, on the tools from first call to last. The people who pitch the work are the people who do it.</p>
         <div class="people">
           {people.map((p) => (
             <article class="person">
@@ -181,7 +184,7 @@ const email = 'hello@wearecrop.co.uk';
       <div class="inner narrow">
         <p class="eyebrow">About</p>
         <h2 class="title">Why Crop.</h2>
-        <p class="lead">The name is the method. We crop away everything that is not the brand, in the strategy and in the design, until only the truth is left. It is the same instinct a designer uses to frame an image and a strategist uses to find the core. Less, but sharper.</p>
+        <p class="lead">The name is the method. We crop away everything that is not the brand, in the strategy and the design, until only the truth is left. Less, but sharper.</p>
       </div>
     </section>
 
@@ -265,7 +268,9 @@ const email = 'hello@wearecrop.co.uk';
   .duo { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); }
   .duo__no { font-family: var(--font-heading); color: var(--color-brand); font-size: var(--text-small); }
   .duo__title { font-size: var(--text-title); letter-spacing: var(--tracking-tight); margin: var(--space-2) 0; }
-  .aside { margin-top: var(--space-5); padding-top: var(--space-3); border-top: 1px solid var(--color-line); color: var(--color-muted); font-size: var(--text-base); max-width: 60ch; }
+  .extend { margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid var(--color-line); max-width: 66ch; }
+  .extend__title { font-family: var(--font-heading); font-size: 1.6rem; letter-spacing: var(--tracking-tight); }
+  .extend .muted { margin-top: var(--space-3); }
   @media (max-width: 720px) { .duo { grid-template-columns: 1fr; gap: var(--space-4); } }
 
   /* Work grid */
