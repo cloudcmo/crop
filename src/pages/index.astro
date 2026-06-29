@@ -67,7 +67,10 @@ const email = 'hello@wearecrop.co.uk';
   <!-- Top bar -->
   <header class="bar">
     <div class="bar__inner">
-      <a class="brand" href="#top">CROP</a>
+      <a class="brand" href="#top">
+        <span class="brand__mark">CROP</span>
+        <span class="brand__strap">Less is more</span>
+      </a>
       <nav class="nav">
         <a href="#work">Work</a>
         <a href="#studio">Studio</a>
@@ -127,7 +130,7 @@ const email = 'hello@wearecrop.co.uk';
     <section id="work" class="block">
       <div class="inner">
         <p class="eyebrow">Work</p>
-        <h2 class="title">Some of the brands we have worked on.</h2>
+        <h2 class="title">Brands that actually went somewhere.</h2>
         <div class="work-grid">
           {work.map((w) => (
             <figure class="work">
@@ -183,7 +186,7 @@ const email = 'hello@wearecrop.co.uk';
     <!-- About: the name, demoted and brief -->
     <section id="about" class="block">
       <div class="inner">
-        <p class="eyebrow">We believe less is more</p>
+        <p class="eyebrow">About us</p>
         <div class="beliefs">
           <div class="belief">
             <h2 class="belief__head">Strategy is what you don't do.</h2>
@@ -243,8 +246,10 @@ const email = 'hello@wearecrop.co.uk';
     padding: 0 var(--space-4); height: 64px;
     display: flex; align-items: center; justify-content: space-between;
   }
-  .brand { font-family: var(--font-heading); font-weight: 700; font-size: 1.4rem; letter-spacing: 0.06em; color: var(--color-fg); }
+  .brand { display: inline-flex; flex-direction: column; line-height: 1; }
   .brand:hover { text-decoration: none; }
+  .brand__mark { font-family: var(--font-heading); font-weight: 700; font-size: 1.4rem; letter-spacing: 0.06em; color: var(--color-fg); }
+  .brand__strap { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-muted); margin-top: 4px; }
   .nav { display: flex; gap: var(--space-4); }
   .nav a { color: var(--color-muted); font-size: var(--text-base); }
   .nav a:hover { color: var(--color-fg); text-decoration: none; }
