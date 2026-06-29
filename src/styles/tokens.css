@@ -14,13 +14,13 @@
 
 :root {
   /* ---- Colour -------------------------------------------- */
-  --color-bg:       #0f0f0f;  /* page background      (placeholder) */
-  --color-surface:  #1a1a1a;  /* raised panels/cards  (placeholder) */
-  --color-fg:       #ffffff;  /* primary text         (placeholder) */
-  --color-muted:    #8a8a8a;  /* secondary text       (placeholder) */
-  --color-line:     #2a2a2a;  /* hairlines/borders    (placeholder) */
-  --color-brand:    #1db954;  /* CROP brand accent    (placeholder) */
-  --color-on-brand: #0a0a0a;  /* text on the accent   (placeholder) */
+  --color-bg:       #ffffff;  /* page background, light (placeholder) */
+  --color-surface:  #f4f2ed;  /* raised panels/cards    (placeholder) */
+  --color-fg:       #1b1a18;  /* charcoal ink, not pure black (placeholder) */
+  --color-muted:    #6f6b63;  /* secondary text         (placeholder) */
+  --color-line:     #e5e2da;  /* hairlines/borders      (placeholder) */
+  --color-brand:    #2f6b4f;  /* CROP accent, restrained green (placeholder) */
+  --color-on-brand: #ffffff;  /* text on the accent     (placeholder) */
 
   /* ---- Typography: families ------------------------------ */
   --font-heading: 'Oswald', system-ui, sans-serif;          /* placeholder */
