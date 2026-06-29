@@ -69,7 +69,7 @@ const email = 'hello@wearecrop.co.uk';
     <div class="bar__inner">
       <a class="brand" href="#top">
         <span class="brand__mark">CROP</span>
-        <span class="brand__strap">Less is more</span>
+        <span class="brand__strap">Violently simple branding</span>
       </a>
       <nav class="nav">
         <a href="#work">Work</a>
@@ -120,8 +120,8 @@ const email = 'hello@wearecrop.co.uk';
           </article>
         </div>
         <div class="extend">
-          <h3 class="extend__title">A lean, senior studio with a serious network.</h3>
-          <p class="muted">No studio rent, no London overheads, no juniors on your budget. You pay for the work, not the fluff. When a brief needs more, photography, film, web, PR, we build the right team around it from a hand-picked network we trust, and run it for you.</p>
+          <h3 class="extend__title">A senior studio with a serious network.</h3>
+          <p class="muted">No studio rent, no London overheads, no juniors on your budget. You pay for the work, not the fluff. When a brief needs more, photography, film, web, PR, we build the right team from a hand-picked network we trust, the cream of the crop, and run it for you.</p>
         </div>
       </div>
     </section>
@@ -130,7 +130,7 @@ const email = 'hello@wearecrop.co.uk';
     <section id="work" class="block">
       <div class="inner">
         <p class="eyebrow">Work</p>
-        <h2 class="title">Brands that actually went somewhere.</h2>
+        <h2 class="title">Big-league experience. Small-studio focus.</h2>
         <div class="work-grid">
           {work.map((w) => (
             <figure class="work">
@@ -142,7 +142,6 @@ const email = 'hello@wearecrop.co.uk';
             </figure>
           ))}
         </div>
-        <p class="work-note">A snapshot of two decades between us. Full case studies to follow.</p>
       </div>
     </section>
 
@@ -203,7 +202,8 @@ const email = 'hello@wearecrop.co.uk';
     <!-- Contact -->
     <section id="contact" class="contact">
       <div class="inner">
-        <h2 class="contact__title">Let us sharpen your brand.</h2>
+        <h2 class="contact__title">A brand as good as your product.</h2>
+        <p class="lead lead--center">One people want to belong to. One that pays its way. One that turns what you do into a story worth joining.</p>
         <a class="btn btn--primary" href={`mailto:${email}`}>{email}</a>
       </div>
     </section>
@@ -292,8 +292,12 @@ const email = 'hello@wearecrop.co.uk';
   .belief .muted { margin-top: var(--space-3); }
   @media (max-width: 720px) { .beliefs { grid-template-columns: 1fr; gap: var(--space-4); } }
 
-  /* Work placeholder note */
-  .work-note { margin-top: var(--space-4); font-size: var(--text-base); color: var(--color-muted); }
+  /* Work tile hover (signals it will be clickable) */
+  .work__media { transition: border-color 0.15s ease; }
+  .work:hover .work__media { border-color: var(--color-muted); }
+
+  /* Contact supporting line */
+  .contact .lead { text-align: center; max-width: 44ch; }
   @media (max-width: 720px) { .duo { grid-template-columns: 1fr; gap: var(--space-4); } }
 
   /* Work grid */
